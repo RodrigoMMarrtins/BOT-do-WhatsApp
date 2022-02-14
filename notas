@@ -1,0 +1,38 @@
+
+        sendMessage(from, "Bem-vindo ao Alcançados!" +
+            "\nEstamos felizes que você tenha chegado até aqui." +
+            "\nO que gostaria de fazer? \n\n" +
+            
+            "1. Meditar em um versículo" +
+            "\n2. Ler um devocional" +
+            "\n3. Falar com alguém sobre Jesus\n" +
+            "4. Receber uma oração")
+
+        let mensagem;
+        switch (body) {
+            case "1":
+                mensagem = "Porque sou eu que conheço os planos que tenho para vocês’, diz o Senhor, ‘planos de fazê-los prosperar e não de causar dano, planos de dar a vocês esperança e um futuro.\n\n"  +
+
+                "Jeremias 29:11"
+                break;
+
+            case "2":
+                mensagem = "🗣️ Que bom! Vamos fazer o devocional juntos?\n" +
+
+                "Porque sou eu que conheço os planos que tenho para vocês’, diz o Senhor, ‘planos de fazê-los prosperar e não de causar dano, planos de dar a vocês esperança e um futuro.\n" + 
+                "Jeremias 29:11 NVI\n \n" +
+                
+                "✨ Quando o Senhor entregava profecias ao seu povo por meio de Jeremias, ele se dirigia com justiça e amor, apontando as falhas de seu povo mas, ao mesmo tempo, as cobrindo com sua graça e misericórdia.\n" +
+                "Do mesmo modo, nós, os gentios (pessoas não-judias que foram enxertadas no Plano da Salvação) somos chamados para uma relação com Deus que, quando arrependidos, cobre nossas transgressões e nos transforma em nova criatura. É sobre esse plano que Deus fala nessa passagem e pode ser aplicado a mim e a você: plano não de condenação através da lei e das obras, afinal, somos pecadores e fadados a levar o fardo da Queda e pagar o salário do pecado -- a morte. Mas, também, por Cristo, somos tornados herdeiros do trono, do céu e das promessas antes feitas a Israel. Somos chamados, por meio de Jesus, a sair da velha vida e tomar parte no plano que o Senhor tem para nós. Nas palavras dEle, planos de prosperidade e esperança, de um futuro. Um futuro no céu, na vida eterna, em retidão e comunhão com Deus e a Sua Criação. A vontade de Deus para você é boa, perfeita, agradável, e não é para te causar dano, ou para te frustrar ou para te desamparar. *Os planos dEle para você são melhores, maiores, de paz e de esperança. Analise o que isso significa em seu contexto. Qual é a vontade, o plano divino para você? Você está pronto para se submeter a ele e desfrutar de um futuro de paz e salvação?"
+                
+                break;
+
+            case "sair":
+                mensagem = "✨ Terminamos por aqui! 🛐 Quer falar mais sobre isso? Converse com um de nossos jovens sobre Deus, vida cristã e fé! Estamos aqui para te ajudar nessa caminhada. 🗣️ Digite *QUERO CONVERSAR* e vamos falar sobre Jesus!"
+                break;
+
+            default:
+                mensagem ="Não entendi...\n" +
+                "Poderia reformular sua pergunta?"
+                break;
+        }
